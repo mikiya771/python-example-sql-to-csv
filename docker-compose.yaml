@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mysql:
+    platform: linux/x86_64
+    image: mysql:5.7
+    env_file:
+      - test.env
+    ports:
+      - "3306:3306"
